@@ -1,0 +1,27 @@
+.main{
+	width: 1000px;
+	height: 540px;
+	background: #1abc9c;
+}
+.row1{
+	width: 1000px;
+	height: 100px;
+	background: #3498db;
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Row 2 css */
+.row2{
+	width: 1000px;
+	height: 40px;
+	background: #8e44ad;
+	text-align: center;
+}
+.item{
+	width: 200px;
+	height: 40px;
+	background: #f1c40f;
+	float: left;
+}
+/* https://flatuicolors.com */

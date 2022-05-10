@@ -1,0 +1,23 @@
+.col3{
+	width: 400px;
+	height: 150px;
+	background: beige;
+	float: left;
+}
+.col1{
+	width: 400px;
+	height: 150px;
+	float: right;
+	background: blue;
+}
+.col2{
+	width: 400px;
+	height: 150px;
+	float: left;
+	background: yellow;
+}
+.main{
+	width: 1400px;
+	height:150px;
+	background: red;
+}
