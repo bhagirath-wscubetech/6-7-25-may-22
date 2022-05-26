@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.main{
+			width: 1000px;
+			padding: 10px;
+			margin: auto;
+			border:1px black solid;
+		}
+		.group{
+			margin-top: 10px;
+			font-size: 25px;
+		}
+		.group label{
+			display: inline-block;
+			width: 150px;
+		}
+		input,textarea{
+			font-size: inherit;
+		}
+		.require label:after{
+			content: " *";
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<form>
+			<div class="group require">
+				<label>Name</label>
+				<input required type="text" autofocus maxlength="30" name="user_name">
+			</div>
+			<div class="group require">
+				<label>Email</label>
+				<input value="qwer@gmail.com" readonly required type="email" name="user_email">				
+			</div>
+			<input type="hidden" value="test" name="token">
+			<div class="group require">
+				<label>Password</label>
+				<input required type="password" name="user_password">				
+			</div>
+			<div class="group">
+				<label>DOB</label>
+				<input type="date" name="" min="2022-05-26" max="2022-05-31">
+			</div>
+
+			<div class="group">
+				<label>DOB</label>
+				<input type="datetime-local" name="">
+			</div>
+
+			<div class="group ">
+				<label>DOB</label>
+				<input type="datetime-local" name="">
+			</div>
+			<div class="group">
+				<label>Age</label>
+				<input type="number" max="40" min="18">
+			</div>
+			<div class="group">
+				<label>Color</label>
+				<input type="color" name="user_color">
+			</div>
+			<div class="group">
+				<label>Address</label>
+				<textarea name="user_address"></textarea>
+			</div>
+			<div class="group require">
+				<label>Country</label>
+				<select name="country">
+					<option> India </option>
+					<option selected> America </option>
+					<option> China </option>
+					<option> Canada </option>
+					<option> USA </option>
+				</select>
+			</div>
+			<div class="group">
+				<label>Gender</label>
+				Male: <input type="radio"  name="user_gender" value="M">
+				Female: <input type="radio" checked name="user_gender" value="F">
+			</div>
+			<div class="group">
+				<label>Hobbies</label>
+				Dancing: <input type="checkbox" checked name="user_hobby" value="D">
+				Singing: <input type="checkbox" checked name="user_hobby" value="S">
+				Playing: <input type="checkbox" name="user_hobby" value="P">
+			</div>
+			<div class="group">
+				<input type="submit">
+				<input type="reset">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
