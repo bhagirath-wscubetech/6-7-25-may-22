@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.parent{
+			width: 1000px;
+			height: 500px;
+			position: relative;
+			margin: auto;
+			border: 2px red solid;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			border: 2px black solid;
+			text-align: center;
+			float: left;
+			background: blue;
+			color: white;
+			position: absolute;
+			top: 0;
+			right: 0;
+			transition: 1s;
+		}
+		.parent:hover .box{
+			right: 800px;
+			top: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="box">
+			<h1>3</h1>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,346 @@
+
+.inner_page_footer_img{
+	background-image:url(../images/inner_page_left_rept.png);
+	background-repeat:repeat-y;
+	width:243px;
+}
+.our_service{
+	font-family:Verdana;
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+	color:#003c66;
+}
+.our_service_point2 a{
+	font-family:Verdana;
+	font-size:12px;
+	text-decoration:none;
+	text-align:left;
+	color:#084a87;	
+}
+.our_service_point2 a:hover{
+	font-family:Verdana;
+	font-size:12px;
+	text-align:left;
+	text-decoration:none;
+	color:#333333;	
+}
+.our_service_point{
+	font-family:Verdana;
+	font-size:12px;
+	text-align:left;
+	color:#0d0d0d;	
+}
+.pagees_title{
+	font-family:Verdana;
+	font-size:10px;
+	vertical-align:top;
+	text-align:left;
+	padding-left:8px;
+	color:#003c66;
+}
+.page_description{
+	font-family:Verdana;
+	font-size:12px;
+	padding-left:10px;
+	text-align:justify;
+	line-height:20px;
+	color:#0d0d0d;
+}
+.page_sub_img{
+	font-family:Verdana;
+	font-size:12px;
+	color:#084a87;
+	vertical-align:top;
+	text-align:center;
+}
+.client_testimonial{
+	font-family: Arial, Verdana, Tahoma, ms sans serif;
+	font-size:16px;
+	color:#084a87;
+	font-weight:bold;
+	vertical-align:top;
+}
+.testimonial_matter{
+	font-family:Verdana;
+	font-size:12px;
+	padding-left:15px;
+	text-align:justify;
+	line-height:16px;
+	color:#454545;
+}
+.request_quote{
+	font-family: Arial, Verdana, Tahoma, ms sans serif;
+	font-size:12px;
+	line-height:25px;
+	padding-top:10px;
+	text-align:justify;
+	color:#0d0d0d;	
+}
+.request_quote_point{
+	font-family:Verdana;
+	font-size:11px;
+	text-align:left;
+	color:#0d0d0d;	
+}
+.request_quote_info{
+	font-family:Verdana;
+	font-size:12px;
+	padding-right:10px;
+	text-align:right;
+	color:#0d0d0d;	
+}
+.contact_padd{
+	padding-left:25px;
+}
+.cot_company_name{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+	text-align:center;
+	color:#3797d1;
+}
+.cont_add{
+	font-family: Arial, Verdana, Tahoma, ms sans serif;
+	font-size:12px;
+	color:#000000;
+	vertical-align:top;
+	padding-top:5px;
+	font-weight:bold;
+	padding-left:20px;
+	width:80px;
+}
+.conct_name{
+	font-family:Arial, Verdana, Tahoma, ms sans serif;
+	font-size:12px;
+	vertical-align:top;
+	color:#000000;
+	line-height:22px;
+}
+.conct_city{
+	font-family:Verdana;
+	font-size:12px;
+	color:#000000;
+	vertical-align:top;
+	text-align:center;
+}
+.map_border{
+	border:solid 1px #084a87;
+}
+.seo_package a{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:right;
+	padding-right:5px;
+	color:#084a87;
+}
+.seo_package a:hover{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	text-decoration:underline;
+	font-weight:bold;
+	text-align:right;
+	padding-right:5px;
+	color:#000066;
+}
+.seonameborder{
+	border-left: solid 1px #FFFFFF;
+}
+.main_menu_bg{
+	background-image:url(../images/main_menu.png);
+	background-repeat:no-repeat;
+	width:236px;
+	border-bottom: solid 1px  #b4b4b4 ;
+	background-position:center;
+	height:26px;
+}
+.seo_heading_font
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#2d3032;
+	
+}
+.seopiont{
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#2d3032;
+	border-right:solid 1px #b4b4b4;
+	border-left: solid 1px #b4b4b4;
+	padding-left:10px;
+}
+.seo_font_bottom
+{
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	border-right: solid 1px #b4b4b4;
+	border-bottom: solid 1px #b4b4b4;
+	font-weight:bold;
+	text-align:center;
+	color:#2d3032;
+	
+}
+.seopiont_bottom{
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#2d3032;
+	border-right:solid 1px #b4b4b4;
+	border-left: solid 1px #b4b4b4;
+	border-bottom: solid 1px #b4b4b4;
+	padding-left:10px;
+}
+.seo_font_bottom
+{
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	border-right: solid 1px #b4b4b4;
+	border-bottom: solid 1px #b4b4b4;
+	font-weight:bold;
+	text-align:center;
+	color:#2d3032;
+	
+}
+.seo_font
+{
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	border-right: solid 1px #b4b4b4;
+	font-weight:bold;
+	text-align:center;
+	color:#2d3032;
+	
+}
+.onpage_seo_bg{
+	background-image:url(../images/onpage_seo_bg.png);
+	background-repeat:no-repeat;
+	width:316px;
+	border-bottom: solid 1px  #b4b4b4 ;
+	background-position:center;
+	height:28px;
+}
+.seo_heading_font
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#2d3032;
+	
+}
+
+
+.indexcsssmall1{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+}
+.indexcsssmall1 a{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+	text-decoration:none
+}
+.indexcsssmall1 a:hover{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+	text-decoration:none;
+}
+.indexcss1{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+}
+.indexcss1 a{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+	text-decoration:none
+}
+.indexcss1 a:hover{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+	text-decoration:none;
+}
+.editlinks1{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+}
+.editlinks1 a{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+	text-decoration:none
+}
+.editlinks1 a:hover{
+	font-family:Verdana;
+	color:#000000;
+	font-size:10px;
+	text-decoration:none;
+}
+.thanku{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#084a87;
+	text-align:center;
+}
+.careers_title a{
+	font-family:Verdana;
+	font-size:12px;
+	text-decoration:none;
+	color:#000000;
+}
+.careers_title a:hover{
+	font-family:Verdana;
+	font-size:12px;
+	text-decoration:none;
+	color:#084a87;;
+}
+.careers_sub_opt{
+	font-family:Verdana;
+	font-size:12px;
+	vertical-align:top;
+	color:#000000;
+	text-align:justify;
+	padding-left:20px;
+	padding-right:10px;
+	line-height:20px;
+}
+.submit{
+	padding-left:20px;
+}
+.career_name{
+	font-family:Verdana;
+	font-size:12px;
+	text-decoration:none;
+	color:#084a87;	
+}
+.style1{
+	font-family:Verdanal;
+	font-size:12px;
+	color:#FF0000;
+}
+.subred{color:#F00;font-size:10px;font-family:Verdana, Geneva, sans-serif;}
+.request-quote{width:663px;float:left;padding:15px 15px 15px 30px;background:url(../images/formbg.gif) left bottom repeat-x;border:1px solid #dcdcdc;}
+.request-quote-row{width:495px;float:left;padding-bottom:13px;}
+.request-quote-lable{width:180px;float:left;color:#424242;font-weight:bold;padding-left:10px;}
+.request-quote-input{width:305px;float:left;}
+.request-input{width:245px;background:#FFF url(../images/input-bg.gif) left top repeat-x;border:1px solid #d6d6d6;font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:#656565;padding:5px;}
+.request-input-im{width:225px;background:#FFF url(../images/input-bg.gif) left top repeat-x;border:1px solid #d6d6d6;font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:#656565;padding:5px;margin-left:5px;}
+.request-select{width:254px;border:1px solid #d6d6d6;height:25px;padding:1px;font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:#656565;}
+.request-textarea{width:255px;background:#FFF url(../images/text-area-bg.gif) left top repeat-x;border:1px solid #d6d6d6;height:65px;font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:#656565;}
+.request-textarea2{width:310px;background:#FFF url(../images/text-area-bg.gif) left top repeat-x;border:1px solid #d6d6d6;height:165px;font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:#656565;}
+.request-checkbox{font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:#656565;}
+.input-box{width:235px;background:url(../images/input-bg.gif) left top no-repeat;border:1px solid #d6d6d6;height:20px;}
+.textarea{width:235px;background:url(../images/text-area-bg.gif) left top no-repeat;border:1px solid #d6d6d6;height:65px;}
+.browse-field{border:1px solid #d6d6d6;color:#656565;background:#FFF;padding:3px;margin-bottom:3px;}
+.buttonsubmit{width:88px;height:32px;background:url(../images/submit-btn.jpg);}
