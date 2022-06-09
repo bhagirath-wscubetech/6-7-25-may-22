@@ -1,0 +1,11 @@
+// Parent Properties
+1) display: flex
+2) flex-direction: row, column, row-reverse, column-reverse
+3) justify-content (x-axis): center, flex-start, flex-end, space-between, space-arround, 							 space-evenly
+4) align-items (y-axis): center, flex-start, flex-end
+flex-wrap: 
+5) flex-wrap: wrap, wrap-reverse, nowrap (default);
+
+// Child Properties
+6) flex-grow: 1,2,3,4,5
+7) align-self:

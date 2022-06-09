@@ -1,0 +1,114 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+}
+.row{
+	width: 100%;
+	display: flex;
+}
+/* ------- */
+body{
+	background: url("../images/waves_.jpg");
+	background-attachment: fixed;
+}
+main{
+	width: 1000px;
+	margin: auto;
+}
+header{
+	width: 100%;
+	border: 1px blue solid;
+	background: url("../images/headerbg.jpg") fixed;
+	background-size: cover;
+	border-bottom: #0083ce solid 10px;
+}
+header .overlay{
+	background: url("../images/gridtile.png");
+}
+.logo{
+	padding-top: 30px;
+	justify-content: center;
+}
+.content{
+	width:400px;
+	text-align: center;
+	font-size: 36px;
+	color: white;
+	border: 2px #27e0ff solid;
+	padding: 15px;
+	margin-top:100px;
+	border-left: none;
+	border-right: none;
+}
+header .row:nth-child(3){
+	margin-top: 150px;
+	padding-bottom: 30px;
+}
+nav{
+	width: 100%;
+}
+#menubar{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+#menubar li{
+	display: inline-block;
+	padding: 10px 30px;
+	border-left: 1px white solid;
+}
+
+#menubar li:first-child{
+	border: none;
+}
+
+
+section{
+	width: 100%;
+	height: 900px;
+	background: white;
+}
+
+.top{
+	width: 100%;
+	height: 320px;
+}
+#home .top{
+	background: url(../images/3.jpg) center center no-repeat fixed;
+	/*name postion repeat attatchment*/
+	background-size: 80% auto;
+}
+#about .top{
+	background: url(../images/1.jpg) center center no-repeat fixed;
+	background-size: 75% auto;
+}
+#service .top{
+	background: url(../images/2.jpg) center center no-repeat fixed;
+    background-size: 100% auto;
+}
+
+.top .overlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0,0.6);
+}
+.title{
+	padding: 5px;
+	font-size: 30px;
+	color: white;
+	border: 8px white solid;	
+}

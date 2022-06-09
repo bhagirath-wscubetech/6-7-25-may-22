@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			height: 100vh;
+			/*100% of viewport*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box{
+			width: 400px;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			border-radius: 50%;
+			box-shadow: 0px 0px 5px grey;
+		}
+		.item{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			border-radius: 50%;
+			transform: scale(1);
+			animation: items 2s;
+			animation-fill-mode: forwards;
+		}
+		.item1{
+			top: -100%;
+			right: -100%;
+			background: #3498db;
+			z-index: 999;
+		}	
+		.item2{
+			bottom: -100%;
+			left: -100%;
+			background: #2ecc71;
+			z-index: 9999;
+		}
+		@keyframes items{
+			from{
+				transform: scale(0);
+			}
+			to{
+				transform: scale(3.2)
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="item item1">	</div>
+		<div class="item item2">	</div>
+	</div>
+</body>
+</html>

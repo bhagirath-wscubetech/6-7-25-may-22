@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.parent{
+			width: 1000px;
+			padding: 10px;
+			border: 2px red solid;
+		}
+		.box{
+			width: 200px;
+			height: 50px;
+			margin: 10px;
+			color: White;
+			font-size: 25px;
+			background: red;
+			animation: race 5s;
+		}
+		@keyframes race{
+			from{
+				transform: translateX(0);
+			}
+			to{
+				transform: translateX(800px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="box" style="animation-timing-function: ease;">ease</div>
+		<div class="box" style="animation-timing-function: linear;">linear</div>
+		<div class="box" style="animation-timing-function: ease-in;">ease-in</div>
+		<div class="box" style="animation-timing-function: ease-out;">ease-out</div>
+		<div class="box" style="animation-timing-function: ease-in-out;">ease-in-out</div>
+
+	</div>
+</body>
+</html>
