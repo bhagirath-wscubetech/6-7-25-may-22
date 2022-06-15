@@ -1,0 +1,13 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');*/
+
+@font-face {
+	/*custom font*/
+    font-family: 'alex_brushregular';
+    src: url('../fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('../fonts/alexbrush-regular-webfont.woff') format('woff');
+}
+p{
+	width: 1000px;
+	margin: 25px auto;
+	font-family: 'alex_brushregular', monospace;
+}

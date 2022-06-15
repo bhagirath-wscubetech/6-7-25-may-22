@@ -17,9 +17,12 @@
 			color: White;
 			font-size: 25px;
 			background: red;
+			-o-animation: race 5s;
+			-webkit-animation: race 5s;
+			-moz-animation: race 5s;
 			animation: race 5s;
 		}
-		@keyframes race{
+		-webkit-@keyframes race{
 			from{
 				transform: translateX(0);
 			}
@@ -27,6 +30,23 @@
 				transform: translateX(800px);
 			}
 		}
+		-o-@keyframes race{
+			from{
+				transform: translateX(0);
+			}
+			to{
+				transform: translateX(800px);
+			}
+		}
+		-webkit-@keyframes race{
+			from{
+				transform: translateX(0);
+			}
+			to{
+				transform: translateX(800px);
+			}
+		}
+
 	</style>
 </head>
 <body>
