@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 5;
+        var b = 10;
+        var c = 15;
+        var sm, lg;
+        if (a < b && a < c) {
+            // console.log("A is the smallest")
+            sm = a;
+        } else if (b < a && b < c) {
+            sm = b;
+            // console.log("B is the smallest")
+        } else {
+            sm = c;
+            // console.log("C is the smallest")
+        }
+        if (a > b && a > c) {
+            // console.log("A is the largest")
+            lg = a;
+        } else if (b > a && b > c) {
+            lg = b;
+            // console.log("B is the largest")
+        } else {
+            lg = c;
+            // console.log("C is the largest")
+        }
+        // console.log(lg + " is the largest number and " + sm + " is the smallest number among " + a + "," + b + "," + c); ES5
+        // ES6 Template literals
+        console.log(`${lg}  is the largest number and ${sm} is the smallest number among ${a} , ${b} , ${c}`);
+    </script>
+</body>
+
+</html>
