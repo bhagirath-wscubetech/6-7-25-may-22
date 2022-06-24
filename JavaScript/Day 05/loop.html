@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var commission = [100, 400, 300, 500, 100, 600, 300, 500, 100, 600, 300, 500, 100, 600, 300, 500, 100, 600, 300, 500, 100, 600, 300, 500, 100, 600, 300, 500, 100, 600, 300]
+        console.log(commission)
+        console.log(commission.length)
+        var total = 0;
+        for (var i = 0; i < commission.length; i++) {
+            // console.log(`commission[${i}]`, commission[i])
+            if (total > 6000) {
+                break;
+            }
+            total += commission[i];
+            // total = total + commission[i]
+            // total = 0 + 100
+            // total = 100 + 400
+            // total = 500 + 300
+            // total = 800 + 500
+            // 
+        }
+        console.log(i, total)
+        console.log("Loop End")
+    </script>
+</body>
+
+</html>

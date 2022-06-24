@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function comm(data, limit = 3000) {
+            // default para
+            // console.log(data)
+            var total = 0;
+            for (var i = 0; i < data.length; i++) {
+                total += data[i] // 3500 + 400 // 3900
+                if (total >= limit) {
+                    return [total, limit];
+                }
+            }
+            return total;
+        }
+
+        var a = [100, 300, 500, 600, 100, 700, 800, 200, 600]
+        var b = [500, 500, 200, 100, 500, 700, 200]
+        var c = [300, 500, 600, 100, 700, 800, 200, 600, 500, 500, 200, 100, 500, 700, 200]
+        var sumA = comm(a, 3800)
+        var sumB = comm(b, 1500)
+        console.log(sumA, sumB)
+        console.log(comm(c, 1000))
+    </script>
+</body>
+
+</html>
