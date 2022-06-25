@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="js/lib.js"></script>
+    <script>
+        var a = 1
+        var b = 5
+            // Prime 1 to 100
+            // for (var j = a; j <= b; j++) {
+            //     if (checkPrime(j) == true) {
+            //         console.log(j)
+            //     }
+            // }
+        for (var j = a; j <= b; j++) {
+            var isPrime = true;
+            var num = j
+            for (var i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime == true) {
+                document.write(j + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>
