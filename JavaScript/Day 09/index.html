@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        <h1> I am the test element </h1>
+    </div>
+    <button onclick="setData()">Set Data</button>
+    <button onclick="getData()">Get Data</button>
+
+    <script>
+        var box = document.getElementById("test")
+        console.log(box)
+            // console.log(box.innerText) // get
+
+        function setData() {
+            // box.innerText = "<h1  class='something'>The button was clicked</h1>" //set
+            box.innerHTML = "<h1 class='something'>The button was clicked</h1>"
+        }
+
+        function getData() {
+            console.log(box.innerHTML) //get
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="details.getData()">Click Me</button>
+    <button onclick="users.getDetails()">User Details</button>
+    <button onclick="this.style.backgroundColor='red'">Hey</button>
+    <script>
+        var details = {
+            name: "John",
+            age: 23,
+            gender: "M",
+            status: true,
+            fName: "Ram",
+            getData: function() {
+                // console.log(`The father name of ${details.name} is ${details.fName}`)
+                // console.log(`The father name of ${this.name} is ${this.fName}`)
+                console.log(this)
+            }
+        }
+
+        var users = {
+            name: "testing",
+            passowrd: "123456789",
+            email: "testing@gmail.com",
+            getDetails: function() {
+                console.log(this)
+                    // console.log(`The password of ${this.name} is ${this.passowrd}`)
+            }
+
+        }
+    </script>
+</body>
+
+</html>

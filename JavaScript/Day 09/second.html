@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 100px;
+            border: 2px red solid;
+            margin: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" style="font-size:35px">
+        Data
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <button onclick="firstMove()"> 
+         >> 
+    </button>
+    <button onclick="secondMove()"> 
+        >> 
+   </button>
+    <script>
+        var elems = document.getElementsByClassName("box")
+        console.log(elems)
+
+        function firstMove() {
+            var content = elems[0].innerHTML
+            elems[1].innerHTML = content
+            elems[0].innerHTML = "" //empty string
+        }
+
+        function secondMove() {
+            var content = elems[1].innerHTML
+            elems[2].innerHTML = content
+            elems[1].innerHTML = "" //empty string
+        }
+        // console.log(elems[0].innerHTML)
+        // console.log(elems[1].innerHTML)
+        // console.log(elems[2].innerHTML)
+    </script>
+</body>
+
+</html>
