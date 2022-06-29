@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            padding: 10px;
+            width: 650px;
+            border: 2px black solid;
+            margin: auto;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px red solid;
+            transition: 0.5s;
+            float: left;
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        
+        button {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">9 </div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">8</div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">7</div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">6</div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">5</div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">4</div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">3</div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">2</div>
+        <div class="box" onclick="getData(this)" onmouseenter="toggleColor(this,1)" onmouseleave="toggleColor(this,0)">1</div>
+        <div class="clear"></div>
+    </div>
+    <script>
+        var boxElems = document.getElementsByClassName("box")
+
+        function getData(box) {
+            console.log(box.innerText)
+        }
+
+        function toggleColor(box, flag) {
+            // console.log(elem)
+            if (flag == 1) {
+                box.style.backgroundColor = "lightgrey"
+                box.style.fontSize = "55px"
+            } else {
+                box.style.backgroundColor = ""
+                box.style.fontSize = ""
+            }
+            // for (box of boxElems) {
+            //     if (flag == 1) {
+            //         box.style.backgroundColor = "red"
+            //     } else {
+            //         box.style.backgroundColor = ""
+            //     }
+            // }
+        }
+    </script>
+</body>
+
+</html>

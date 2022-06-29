@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            border: 2px red solid;
+            transition: 1s;
+        }
+        
+        button {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button onclick="toggleColor(1)">First</button>
+    <button onclick="toggleColor(0)">Second</button>
+    <script>
+        var boxElem = document.getElementById("box")
+
+        function toggleColor(flag) {
+            // console.log(flag)
+            if (flag == 1) {
+                boxElem.style.backgroundColor = "red"
+                boxElem.style.width = "500px"
+            } else {
+                boxElem.style.backgroundColor = ""
+                boxElem.style.width = ""
+            }
+        }
+
+        // function addColor() {
+        //     boxElem.style.backgroundColor = "red"
+        // }
+
+        // function removeColor() {
+        //     boxElem.style.backgroundColor = ""
+        // }
+    </script>
+</body>
+
+</html>
