@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        p {
+            padding: 10px;
+            text-align: justify;
+            cursor: pointer;
+            height: 150px;
+            overflow: hidden;
+            box-shadow: 0px 0px 5px grey;
+        }
+        
+        .box1 {
+            width: 500px;
+            padding: 15px;
+            border: 2px red solid
+        }
+        
+        #box2 {
+            width: 500px;
+            position: sticky;
+            top: 10px;
+            height: 600px;
+            padding: 15px;
+            text-align: justify;
+            border: 2px red solid
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <p onmouseenter="getData(this)">
+            First... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae
+            libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium
+            distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae
+            asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis
+            odit. Nam impedit iusto, animi ad asperiores mollitia fugiat!
+        </p>
+        <p onmouseenter="getData(this)">
+            Second... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat!Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae
+            libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium
+            distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae
+            asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis
+            odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto,
+            animi ad asperiores mollitia fugiat!
+        </p>
+        <p onmouseenter="getData(this)">
+            Third... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat!Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae
+            libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium
+            distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae
+            asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis
+            odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto,
+            animi ad asperiores mollitia fugiat!
+        </p>
+        <p onmouseenter="getData(this)">
+            Fourth... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat!Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae
+            libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium
+            distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae
+            asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis
+            odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto,
+            animi ad asperiores mollitia fugiat!
+        </p>
+        <p onmouseenter="getData(this)">
+            Fifth... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat!Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae
+            libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium
+            distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae
+            asperiores, itaque debitis odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis
+            odit. Nam impedit iusto, animi ad asperiores mollitia fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nemo beatae libero atque ab laudantium distinctio et molestiae asperiores, itaque debitis odit. Nam impedit iusto,
+            animi ad asperiores mollitia fugiat!
+        </p>
+    </div>
+    <div id="box2"> </div>
+
+    <script>
+        var box2 = document.getElementById("box2")
+
+        function getData(para) {
+            box2.innerText = ""
+            box2.innerText = para.innerText
+        }
+    </script>
+</body>
+
+</html>

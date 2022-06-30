@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 500px;
+            /* border: 2px black solid; */
+            margin: auto;
+        }
+        
+        .main-box {
+            padding: 10px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px grey;
+        }
+        
+        .row {
+            padding: 0px 5px;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            box-sizing: border-box;
+        }
+        
+        .sm-img {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="main-box">
+            <img src="images/1.jpg" alt="" width="100%" height="100%" id="main-img">
+        </div>
+        <div class="row">
+            <div class="sm-img">
+                <img src="images/1.jpg" alt="" onmouseenter="show(this)">
+            </div>
+            <div class="sm-img">
+                <img src="images/2.jpg" alt="" onmouseenter="show(this)">
+            </div>
+
+            <div class="sm-img">
+                <img src="images/3.jpg" alt="" onmouseenter="show(this)">
+            </div>
+            <div class="sm-img">
+                <img src="images/4.jpg" alt="" onmouseenter="show(this)">
+            </div>
+            <div class="sm-img">
+                <img src="images/5.jpg" alt="" onmouseenter="show(this)">
+            </div>
+        </div>
+    </div>
+    <script>
+        var mainImg = document.getElementById("main-img")
+
+        function show(imgElem) {
+            // var targetSrc = imgElem.src //get // hover wali image ka src 
+            //     // alert(targetSrc)
+            // mainImg.src = targetSrc; //set // usse src ko main img tag mein
+            mainImg.src = imgElem.src;
+
+        }
+    </script>
+</body>
+
+</html>
