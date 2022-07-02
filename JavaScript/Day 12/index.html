@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="console.log('Hello')">First Button</button>
+    <button onclick="secondBtn()">Second Button</button>
+    <button onclick="stopIt()">Stop </button>
+    <script>
+        var timeoutHolder
+
+        function secondBtn() {
+            timeoutHolder = setTimeout(
+                function() {
+                    // console.log("Hii")
+                    window.location.href = "https://wscubetech.com"
+                },
+                5000
+            )
+        }
+
+        function stopIt() {
+            clearTimeout(timeoutHolder)
+        }
+        // 1000 ms - 1s
+        // 3000 ms - 3s
+    </script>
+</body>
+
+</html>

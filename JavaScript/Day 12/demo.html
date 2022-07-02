@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="res">0</h2>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        var counter = 0;
+        var mode
+        var cond;
+        // var res = document.getElementById("res")
+        var intervalHolder
+
+        function start() {
+            mode = prompt("Please select 1 or 0")
+            if (mode == "0" || mode == "1") {
+                console.log(mode)
+                intervalHolder = setInterval(
+                    function() {
+                        mode == "1" ? counter++ : counter--;
+                        // cond ? true : false
+                        res.innerText = counter + " sec"
+                        cond = mode == "1" ? counter == 10 : counter == -10
+                        if (cond) {
+                            stop()
+                            setTimeout(
+                                function() {
+                                    reset()
+                                },
+                                3000
+                            )
+                        }
+                    },
+                    1000
+                )
+            } else {
+                alert("Invalid Input")
+                start()
+            }
+
+        }
+
+        function stop() {
+            clearInterval(intervalHolder)
+        }
+
+        function reset() {
+            counter = 0;
+            res.innerText = counter
+            stop()
+        }
+        // console.log("Hello")
+        // setInterval(
+        //     function() {
+        //         console.log("Hi")
+        //     },
+        //     1000
+        // )
+    </script>
+</body>
+
+</html>
