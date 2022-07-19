@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            border: 2px red solid;
+            transition: 1s;
+            margin: 10px;
+        }
+        
+        .test {
+            background-color: red;
+        }
+        
+        button {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <button id="first">Add</button>
+    <button id="second">Remove</button>
+    <button id="third">Toggle</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script>
+        var box = $(".box")
+
+        $("#first").click(
+            function() {
+                box.addClass("test")
+            }
+        )
+        $("#second").click(
+            function() {
+                box.removeClass("test")
+            }
+        )
+        $("#third").click(
+            function() {
+                box.toggleClass("test")
+            }
+        )
+
+        // $("#first").click(
+        //     function() {
+        //         box.css({
+        //             backgroundColor: "red",
+        //             height: "300px"
+        //         })
+        //     }
+        // )
+        // box.mouseenter(
+        //     function() {
+        //         box.css({
+        //             backgroundColor: "red",
+        //             height: "300px"
+        //         })
+        //     }
+        // )
+        // box.mouseleave(
+        //     function() {
+        //         box.css({
+        //             backgroundColor: "",
+        //             height: ""
+        //         })
+        //     }
+        // )
+        // box.hover(
+        //     function() {
+        //         box.css({
+        //             backgroundColor: "red",
+        //             height: "300px"
+        //         })
+        //     },
+        //     function() {
+        //         box.css({
+        //             backgroundColor: "",
+        //             height: ""
+        //         })
+        //     }
+        // )
+    </script>
+</body>
+
+</html>

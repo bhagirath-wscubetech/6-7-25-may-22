@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+    <div class="test" id="demo">
+        <h2>Testing 1</h2>
+    </div>
+    <div class="test">
+        <h2>Testing 2</h2>
+    </div>
+    <button onclick="fn()">Toggle</button>
+    <button onclick="fn1()">Hide</button>
+    <button onclick="fn2()">Show</button>
+    <button onclick="fn3()">Fade In</button>
+    <button onclick="fn4()">Fade Out</button>
+    <button onclick="fn5()">Fade Toggle</button>
+    <button onclick="fn6()">Slide Up</button>
+    <button onclick="fn7()">Slide Down</button>
+    <button onclick="fn8()">Slide Toggle</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // var testBox = document.getElementById("demo")
+        // var testBox = $("#test") id
+        // var testBox = $(".test") class
+        var testBox = $("#demo") // element
+
+        function fn() {
+            testBox.toggle(1000)
+        }
+
+        function fn1() {
+            testBox.hide()
+        }
+
+        function fn2() {
+            testBox.show()
+        }
+
+        function fn3() {
+            testBox.fadeIn(3000)
+        }
+
+        function fn4() {
+            testBox.fadeOut(3000)
+        }
+
+        function fn5() {
+            testBox.fadeToggle(3000)
+        }
+
+        function fn6() {
+            testBox.slideUp(1000)
+        }
+
+        function fn7() {
+            testBox.slideDown(1000)
+        }
+
+        function fn8() {
+            testBox.slideToggle(1000)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="demo">
+    <h2 id="test"></h2>
+    <!-- <button id="getData">Get data</button> -->
+    <!-- <button id="get">Get</button>
+    <button id="set">Set</button> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script>
+        var testBox = $("#test")
+        var inputBox = $("#demo")
+
+        inputBox.keyup(
+                function() {
+                    var data = inputBox.val()
+                    testBox.html(data);
+                    // inputBox.val("")
+                }
+            )
+            // $("#get").click(
+            //     function() {
+            //         // console.log(testBox.text()) //get innerText
+            //         console.log(testBox.html()) //get innerHTML
+            //     }
+            // )
+            // $("#set").click(
+            //     function() {
+            //         // testBox.text("Clicked!!!") //set innerText
+            //         testBox.html("<i> Was Clicked </i>") //set innerHTML
+            //     }
+            // )
+    </script>
+</body>
+
+</html>

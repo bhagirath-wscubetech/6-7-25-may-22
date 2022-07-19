@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #btn {
+            color: white;
+        }
+        
+        .success {
+            background-color: green;
+        }
+        
+        .danger {
+            background-color: red;
+        }
+        
+        .modal {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            display: flex;
+            transform: scale(0, 0);
+            transition: 0.3s;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .box {
+            width: 400px;
+            height: 400px;
+            box-shadow: 0px 0px 4px grey;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="box">
+            <button onclick="hideModal()">Close</button>
+        </div>
+    </div>
+    <button onclick="showModal()">Open Modal</button>
+    <div>
+        <input type="password" id="passBox">
+        <h4 id="res"></h4>
+    </div>
+    <button id="btn" class="success">Show Password</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script>
+        var passBox = $("#passBox")
+        $("#btn").click(
+            function() {
+                if (passBox.attr("type") == "password") {
+                    passBox.attr("type", "text") //set
+                    $(this).text("Hide Password").addClass("danger").removeClass("success")
+                } else {
+                    passBox.attr("type", "password") //set
+                    $(this).text("Show Password").addClass("success").removeClass("danger")
+                }
+            }
+        )
+
+        var modal = $(".modal")
+
+        function showModal() {
+            modal.css({
+                transform: "scale(1,1)"
+            })
+        }
+
+        function hideModal() {
+            modal.css({
+                transform: "scale(0,0)"
+            })
+        }
+
+        $(".box").click(
+            function() {
+                return false;
+            }
+        )
+        modal.click(
+            function() {
+                hideModal()
+            }
+        )
+
+
+        $(document).keyup(
+            function(event) {
+                if (event.which == 27) {
+                    hideModal()
+                }
+            }
+        )
+
+        document.addEventListener("keydown", function(event) {
+            var caps = event.getModifierState && event.getModifierState('CapsLock');
+            if (caps == true) {
+                $("#res").html("Capslock is on")
+            } else {
+                $("#res").html("")
+            }
+        })
+    </script>
+</body>
+
+</html>
