@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        .parent {
+            width: 500px;
+            margin: auto;
+            min-height: 450px;
+            text-align: center;
+            font-size: 25px;
+            border: 2px red solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+    </div>
+    <button onclick="appeData()">Append</button>
+    <button onclick="prepeData()">Prepend</button>
+    <button onclick="befData()">Before</button>
+    <button onclick="aftData()">After</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script>
+        var parent = $(".parent")
+        var i = 0;
+        var j = 0;
+        var k = 0;
+        var l = 0;
+
+        function appeData() {
+            i++;
+            parent.append(`<h4> Appended  ${i}</h4>`)
+        }
+
+        function prepeData() {
+            j++;
+            parent.prepend(`<h4> Prepended  ${j}</h4>`)
+        }
+
+        function befData() {
+            j++;
+            parent.before(`<h4> Before  ${j}</h4>`)
+        }
+
+        function aftData() {
+            k++;
+            parent.after(`<h4> After  ${k}</h4>`)
+
+        }
+    </script>
+</body>
+
+</html>
