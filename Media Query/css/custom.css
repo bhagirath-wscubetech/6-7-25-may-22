@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.container {
+    width: 100%;
+    color: white;
+    background-color: cadetblue;
+}
+
+.row {
+    width: 1170px;
+    padding: 12px 0;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 15%;
+}
+
+#main-nav li {
+    padding: 20px;
+    display: inline-block;
+}
+
+#bars {
+    font-size: 30px;
+    display: none;
+}
